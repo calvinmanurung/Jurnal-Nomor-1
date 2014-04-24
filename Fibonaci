@@ -14,9 +14,11 @@ public class Fibonaci{
 	public static void main(String[] args){
 		Fibonaci f=new Fibonaci();
 		
-		int input=15;
+		int input=4;
+		int jumlah=0;
 		for(int i=1;i<=input;i++){
-		System.out.print(f.fibo(i)+" ");
-			}
+		jumlah+=f.fibo(i);
+		}
+		System.out.print(jumlah);
 		}
 	}
