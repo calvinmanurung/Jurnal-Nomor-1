@@ -1,0 +1,22 @@
+public class Fibonaci{
+	public int fibo(int i){
+	if(i==0){
+		return 0;
+	
+		}
+		else if(i==1){
+		return 1;
+	}
+		else{
+			return fibo(i-1)+fibo(i-2);
+		}
+	}
+	public static void main(String[] args){
+		Fibonaci f=new Fibonaci();
+		
+		int input=15;
+		for(int i=1;i<=input;i++){
+		System.out.print(f.fibo(i)+" ");
+			}
+		}
+	}
